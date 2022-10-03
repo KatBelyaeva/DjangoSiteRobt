@@ -1,0 +1,22 @@
+{% extends 'my_site/base.html' %}
+{% block title %}Полезные статьи{% endblock %}
+{% block content %}
+
+<div id="about" class="section">
+	<div class="container">
+		<div class="row">
+			<div class="feature-content">
+				{% for i in blog %}
+				<img src="{{ i.photo.url }}" height="auto" width="300" align="left" style="border: 8px solid #ffffff";>
+				<h3>{{i.title}}</h3><br>
+				<div>{{i.content|safe}}</div>
+				<br>
+				<hr style="border:1px solid: grey">
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+

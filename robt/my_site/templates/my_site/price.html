@@ -1,0 +1,141 @@
+{% extends 'my_site/base.html' %}
+{% block title %}Цены на ремонт стиральных машин{% endblock %}
+{% block content %}
+{% load static %}
+
+		<div id="courses" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="section-header text-center">
+						<h2>Цены на ремонт стиральных машин</h2>
+						<p class="lead">Мы предлагаем своим клиентам выгодные цены и отличное качество ремонта!</p>
+					</div>
+				</div>
+
+				<div id="courses-wrapper">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/podshipnik.jpg' %}" alt="Замена подшипника">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Стиральная машина сильно шумит на отжиме, скрежет барабана при стирке.</a>
+								<div class="course-details">
+									<span class="course-category">Замена подшипников</span>
+									<span class="course-price course-free">от 65 руб.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/nasos.jpg' %}" alt="Замена насоса">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Стиральная машина не сливает воду или не отжимает белье.</a>
+								<div class="course-details">
+									<span class="course-category">Замена насоса</span>
+									<span class="course-price course-free">от 40 руб.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/ten.jpg' %}" alt="Замена тена">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Стиральная машина не греет воду, долго или бесконечно стирает.</a>
+								<div class="course-details">
+									<span class="course-category">Замена тена</span>
+									<span class="course-price course-free">от 40 руб.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/modul.jpg' %}" alt="Ремонт модуля">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Стиральная машина не включается, сбиваются программы и многое др.</a>
+								<div class="course-details">
+									<span class="course-category">Ремонт модуля</span>
+									<span class="course-price course-free">от 40 руб.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/dvigatel.jpg' %}" alt="Замена двигателя">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">В стиральной машине не крутится барабан, запах гари.</a>
+								<div class="course-details">
+									<span class="course-category">Замена двигателя</span>
+									<span class="course-price course-free">от 75 руб.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/amort.jpg' %}" alt="Замена амортизаторов">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Посторонние стуки при вращении барабана.</a>
+								<div class="course-details">
+									<span class="course-category">Замена амортизаторов</span>
+									<span class="course-price course-free">от 30 руб.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/tech.jpg' %}" alt="Устранение течи">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Появление воды под стиральной машиной.</a>
+								<div class="course-details">
+									<span class="course-category">Устранение течи</span>
+									<span class="course-price course-free">от 20 руб.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/steklo.jpg' %}" alt="Замена стекла">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">В люке треснуло или разбилось стекло.</a>
+								<div class="course-details">
+									<span class="course-category">Замена стекла люка</span>
+									<span class="course-price course-free">от 25 руб.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="center-btn">
+						<a class="main-button icon-button" href="{% url 'contact' %}">Получить консультацию</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{% endblock %}

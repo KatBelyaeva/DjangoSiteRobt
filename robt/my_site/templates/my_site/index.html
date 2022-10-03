@@ -1,0 +1,168 @@
+{% extends 'my_site/base.html' %}
+{% block title %}Ремонт стиральных машин в Минске{% endblock %}
+{% block content %}
+{% load static %}
+
+		<div id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="section-header">
+						<h2>Почему стоит доверить ремонт нам?</h2>
+						<p class="lead">Наш сервисный центр осуществляет недорогой ремонт бытовой техники с 2007 г.</p>
+					</div>
+					<div class="col-md-6">
+						<div class="feature">
+							<i class="feature-icon fa fa-users"></i>
+							<div class="feature-content">
+								<h4>Мы профессионалы</h4>
+								<p>Наш сервисный центр был организован более 12 лет назад. Можете сами представить, каким огромным опытом обладают наши мастера.</p>
+							</div>
+						</div>
+
+						<div class="feature">
+							<i class="feature-icon fa fa-money"></i>
+							<div class="feature-content">
+								<h4>У нас недорого</h4>
+								<p>Мы сами занимаемся поставками запчастей, поэтому можем предложить нашим клиентам самые выгодные цены ремонт бытовой техники.</p>
+							</div>
+						</div>
+
+						<div class="feature">
+							<i class="feature-icon fa fa-check-square-o"></i>
+							<div class="feature-content">
+								<h4>Даем гарантию</h4>
+								<p>Благодаря большому опыту, а также банальной порядочности мы можем давать гарантию на ремонт стиральных машин до 12 мес.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-5">
+						<div class="about-img">
+							<img src="{% static 'my_site/images/image1.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="courses" class="section">
+
+			<div class="container">
+
+				<div class="row">
+					<div class="section-header text-center">
+						<h2>Наши мастера по ремонту</h2>
+						<p class="lead">К Вам приедет мастер с опытом работы более 5 лет!</p>
+					</div>
+				</div>
+
+				<div id="courses-wrapper">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/neverovich.jpg' %}" alt="Неверович">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Дмитрий Неверович<br>Опыт работы - 8 лет</a>
+								<div class="course-details">
+									<span class="course-category">"Люблю ремонтировать электронику стиральных машин, а в частности модули управления и другие неисправности."</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/lepeshko.jpg' %}" alt="Лепешко">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Илья Лепешко<br>Опыт работы - 11 лет.</a>
+								<div class="course-details">
+									<span class="course-category">"Занимаюсь ремонтом стиральных машин уже более 10 лет, имею квалификацию в ремонте холодильников и посудомоечных"</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/lepeshko2.jpg' %}" alt="">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Константин Лепешко<br>Опыт работы - 5 лет.</a>
+								<div class="course-details">
+									<span class="course-category">"Люблю искать и устранять неисправности у техники."</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="course">
+								<a href="{% url 'contact' %}" class="course-img">
+									<img src="{% static 'my_site/images/beliayev.jpg' %}" alt="">
+									<i class="course-link-icon fa fa-link"></i>
+								</a>
+								<a class="course-title">Беляев Сергей<br>Опыт работы более 10 лет.</a>
+								<div class="course-details">
+									<span class="course-category">"Могу определить поломку еще на этапе разговора с клиентом. Порядочность и компетентность - мое главное кредо"</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="section-header">
+						<h2>Как мы работаем?</h2>
+						<p class="lead">Всего несколько шагов и ваша стиральная машина будет, как новая!</p>
+					</div>
+
+					<div class="col-md-5">
+						<div class="about-img">
+							<img src="{% static 'my_site/images/image2.png' %}" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="feature">
+							<i class="feature-icon fa fa-phone"></i>
+							<div class="feature-content">
+								<h4>Оставляете заявку</h4>
+								<p>Оставляете заявку или набираете нам: +375 29 155-62-96.</p>
+							</div>
+						</div>
+
+						<div class="feature">
+							<i class="feature-icon fa fa-child"></i>
+							<div class="feature-content">
+								<h4>Консультация</h4>
+								<p>Мастер консультирует Вас по вопросам цены ремонта и записывает Ваши контакты.</p>
+							</div>
+						</div>
+
+						<div class="feature">
+							<i class="feature-icon fa fa-wrench"></i>
+							<div class="feature-content">
+								<h4>Диагностика и ремонт</h4>
+								<p>Мастер диагностирует поломку Вашей стиральной машины и производит ремонт</p>
+							</div>
+						</div>
+
+						<div class="feature">
+							<i class="feature-icon fa fa-thumbs-up"></i>
+							<div class="feature-content">
+								<h4>Приемка работ и гарантия</h4>
+								<p>Вы принимаете все работы и производите оплату. Мастер выписывает Вам гарантийный талон.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{% endblock %}
