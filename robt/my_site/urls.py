@@ -10,7 +10,6 @@ urlpatterns = [
     path('price', price, name='price'),
     path('review', review, name='review'),
     path('blog', my_blog, name='my_blog'),
-    path('tinymce/', include('tinymce.urls')),
 ]
 
 if settings.DEBUG:
